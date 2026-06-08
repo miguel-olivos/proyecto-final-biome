@@ -120,22 +120,4 @@ pero bueno, el menu
 Se ejecuta er main.py 
 le abre un menu que enserio si se veo no se porque es, porque en unos computadores se ve re lindo y en otros queda chueco
 
-tiene 3 opciones:
-Imagenes mediccas 
-
-se elige un archivo dicom de los que uno tenga
-se puede cambiar la vista en todos los cortes en teoria, pero en el axial... pues bueno tieso
-tiene la opcion de hacer zomm segun los cortes que se selecciono, tambien esta la parte de "binarizarlo"
-ademas permite hacer el cambio de formato de la imagen dicom a NIFTI y csv
-
-PROBLEMA, VOLVER AL MENU CIERRA TODO ;-;
-
-senales
-Se selecciona el .mat sin muchas complicaciones, pero la verdad el problema ocurre en la visualizacion como que se sobrepongan varias graficas una sobre otra
-se toman muchos datos y queda algo "fea" la grafica
-no nos funciono el volver al menu ;-;
-
-Datos clinicos
-Muestra los csv en datos donde se da la opcion para ccomparar con respecto a otras, la verdad esta parte si nos quedo mucho mejor
- pero no vuelve al menu ;-;
 
