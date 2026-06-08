@@ -1,8 +1,8 @@
 Integrantes 
-Miguel Angel Olivos Gomez
-Jose Pablo Pulgarin Martinez
-Sara Estrada Quintero (la mona)
-Ana Kateryn Aristizabal Giraldo
+# Miguel Angel Olivos Gomez
+# Jose Pablo Pulgarin Martinez
+# Sara Estrada Quintero (la mona)
+# Ana Kateryn Aristizabal Giraldo
 
 # Manual de Usuario - BioMed
 Sistema de Análisis Biomédico
