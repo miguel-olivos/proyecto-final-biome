@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1081</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="ladoizquierdodatos">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>261</width>
+      <height>625</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #EAF3FB;
+border-right: 1px solid #C8D8E8</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="titucargararchivo_datos">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>13</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #7AABC8;
+border: none</string>
+     </property>
+     <property name="text">
+      <string>CARGAR ARCHIVO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tituelecolumna">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>95</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #7AABC8;
+border: none</string>
+     </property>
+     <property name="text">
+      <string>ELEGIR COLUMNA (MIN. 4)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="titugrafico">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>315</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #7AABC8;
+border: none</string>
+     </property>
+     <property name="text">
+      <string>GRÁFICO DE COMPARACIÓN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tituejex">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>350</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #5A88A8;
+border: none</string>
+     </property>
+     <property name="text">
+      <string>Columna eje x</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>85</y>
+       <width>223</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #9BB8D3;
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_12">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>223</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #9BB8D3;
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="botonvergrafi">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>223</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2FB67C;
+color: white;
+border-radius: 6px;
+border: none;
+</string>
+     </property>
+     <property name="text">
+      <string>Ver gráficas</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="botoncargararchivoCSV">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>223</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2F6FA0;
+color: white;
+border-radius: 6px;
+border: none;
+</string>
+     </property>
+     <property name="text">
+      <string>Cargar CSV o Excel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="botonvolver_datos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>560</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #EAF3FB;
+color: #2F6FA0;
+border: 1px solid #BFD8F0;
+border-radius: 6px;
+padding: 4px 12px</string>
+     </property>
+     <property name="text">
+      <string>Volver al menú</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listacolumnas">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>221</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 6px;
+color: #3A6A8A</string>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="tituejey">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>410</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #5A88A8;
+border: none</string>
+     </property>
+     <property name="text">
+      <string>Columna eje y</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboejex">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>370</y>
+       <width>223</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 6px;
+padding: 4px;
+color: #3A6A8A;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboejey">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>430</y>
+       <width>223</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 6px;
+padding: 4px;
+color: #3A6A8A;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nuevo elemento</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="botongraficar">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>490</y>
+       <width>223</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2FB67C;
+color: white;
+border-radius: 6px;
+padding: 7px;
+</string>
+     </property>
+     <property name="text">
+      <string>Graficar</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="ladoderecho_datos">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>0</y>
+      <width>821</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #F4F8FC</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QGroupBox" name="framegrafico1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>261</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 10px;
+color: #7AABC8</string>
+     </property>
+     <property name="title">
+      <string>GRÁFICO 1</string>
+     </property>
+     <widget class="QLabel" name="grafico1_datos">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1B2D3E; border-radius: 6px;</string>
+      </property>
+      <property name="text">
+       <string>Grafico</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="titudatos">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>0</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #1A4F72;
+background-color: transparent;
+border: none</string>
+     </property>
+     <property name="text">
+      <string>DATOS CLÍNICOS</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="framegrafico2">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>50</y>
+       <width>261</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 10px;
+color: #7AABC8</string>
+     </property>
+     <property name="title">
+      <string>GRÁFICO 2</string>
+     </property>
+     <widget class="QLabel" name="grafico2_datos">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1B2D3E; border-radius: 6px;</string>
+      </property>
+      <property name="text">
+       <string>Grafico</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="framegrafico3">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>50</y>
+       <width>261</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 10px;
+color: #7AABC8</string>
+     </property>
+     <property name="title">
+      <string>GRÁFICO 3</string>
+     </property>
+     <widget class="QLabel" name="grafico3_datos">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1B2D3E; border-radius: 6px;</string>
+      </property>
+      <property name="text">
+       <string>Grafico</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="framegrafico4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>261</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 10px;
+color: #7AABC8</string>
+     </property>
+     <property name="title">
+      <string>GRÁFICO 4</string>
+     </property>
+     <widget class="QLabel" name="grafico4_datos">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1B2D3E; border-radius: 6px;</string>
+      </property>
+      <property name="text">
+       <string>Grafico</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="framecomparacion_datos">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>200</y>
+       <width>531</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 10px;
+color: #7AABC8</string>
+     </property>
+     <property name="title">
+      <string>GRÁFICO DE COMPARACIÓN</string>
+     </property>
+     <widget class="QLabel" name="graficocomparacion_datos">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>511</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1B2D3E; border-radius: 6px;</string>
+      </property>
+      <property name="text">
+       <string>Grafico</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="framedatosarchivo">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>350</y>
+       <width>661</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 10px;
+color: #7AABC8</string>
+     </property>
+     <property name="title">
+      <string>DATOS DEL ARCHIVO</string>
+     </property>
+     <widget class="QTableWidget" name="tabladatosarchivo">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>611</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">cssbackground-color: white;
+border: 1px solid #C8D8E8;
+border-radius: 6px;
+gridline-color: #C8D8E8;
+color: #3A6A8A;
+font-size: 11px;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>Columna</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tipo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Promedio</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Desviación estándar</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Mínimo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Máximo</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1081</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
